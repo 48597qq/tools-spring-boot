@@ -1,0 +1,65 @@
+{
+  "groups": [
+    {
+      "name": "code.generator",
+      "type": "org.wengll.tools.autoconfigure.code.generator.CodeGeneratorProperties",
+      "sourceType": "org.wengll.tools.autoconfigure.code.generator.CodeGeneratorProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "code.generator.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether to enable code generator.",
+      "sourceType": "org.wengll.tools.autoconfigure.code.generator.CodeGeneratorProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "code.generator.controller-path",
+      "type": "java.lang.String",
+      "description": "Code generator controller requestMapping path.",
+      "sourceType": "org.wengll.tools.autoconfigure.code.generator.CodeGeneratorProperties",
+      "defaultValue": "/generator"
+    },
+    {
+      "name": "code.generator.list-method-path",
+      "type": "java.lang.String",
+      "description": "Code generator method list requestMapping path.",
+      "sourceType": "org.wengll.tools.autoconfigure.code.generator.CodeGeneratorProperties",
+      "defaultValue": "/list"
+    }
+  ],
+  "hints": [
+    {
+      "name": "code.generator.enabled",
+      "values": [
+        {
+          "value": true,
+          "description": "Open code generator."
+        },
+        {
+          "value": false,
+          "description": "Close code generator."
+        }
+      ]
+    },
+    {
+      "name": "code.generator.controller-path",
+      "values": [
+        {
+          "value": "/generator",
+          "description": "Default code generator controller path."
+        }
+      ]
+    },
+    {
+      "name": "code.generator.list-method-path",
+      "values": [
+        {
+          "value": "/list",
+          "description": "Default code generator method path."
+        }
+      ]
+    }
+  ]
+}
