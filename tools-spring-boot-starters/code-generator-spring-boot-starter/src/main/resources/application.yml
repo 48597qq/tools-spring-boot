@@ -1,14 +1,19 @@
 spring:
   freemarker:
     # 测试环境关闭
-    cache: true
+    cache: false
     suffix: .ftl
     charset: UTF-8
+  mvc:
+    static-path-pattern: /webjars/**
+
 code:
   generator:
     enabled: true
     list-method-path: /list
     controller-path: /generator
+
+
 
 
 
