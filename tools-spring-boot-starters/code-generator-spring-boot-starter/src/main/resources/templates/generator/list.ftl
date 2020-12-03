@@ -165,61 +165,63 @@
 </div>
 </body>
 
-<form id="configDialog" class="layui-form" action="/dbConfig/save">
-    <div class="layui-form-item" style="margin-top: 20px;">
-        <div class="layui-inline">
-            <label class="layui-form-label">连接名：</label>
-            <div class="layui-input-inline">
-                <input type="text" name="title" placeholder="请输入连接名" autocomplete="off" class="layui-input" lay-verify="required" required>
+<div id="configDialog" style="display: none;">
+    <form class="layui-form" action="/dbConfig/save">
+        <div class="layui-form-item" style="margin-top: 20px;">
+            <div class="layui-inline">
+                <label class="layui-form-label">连接名：</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="title" placeholder="请输入连接名" autocomplete="off" class="layui-input" lay-verify="required" required>
+                </div>
+                <label class="layui-input-required-label">*</label>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">URL：</label>
+            <div class="layui-input-inline" style="width: 380px;">
+                <input type="text" name="title" placeholder="请输入URL" autocomplete="off" class="layui-input" lay-verify="required" required>
             </div>
             <label class="layui-input-required-label">*</label>
         </div>
-    </div>
 
-    <div class="layui-form-item">
-        <label class="layui-form-label">URL：</label>
-        <div class="layui-input-inline" style="width: 380px;">
-            <input type="text" name="title" placeholder="请输入URL" autocomplete="off" class="layui-input" lay-verify="required" required>
-        </div>
-        <label class="layui-input-required-label">*</label>
-    </div>
-
-    <div class="layui-form-item">
-        <div class="layui-inline">
-            <label class="layui-form-label">用户名：</label>
-            <div class="layui-input-inline">
-                <input type="text" name="title" placeholder="请输入用户名" autocomplete="off" class="layui-input" lay-verify="required" required>
-            </div>
-            <label class="layui-input-required-label">*</label>
-        </div>
-    </div>
-
-    <div class="layui-form-item">
-        <label class="layui-form-label">密码：</label>
-        <div class="layui-inline">
-            <div class="layui-input-inline">
-                <input type="text" name="title" placeholder="请输入密码" autocomplete="off" class="layui-input" lay-verify="required" required>
-            </div>
-            <label class="layui-input-required-label">*</label>
-        </div>
-    </div>
-
-    <div class="layui-form-item">
-        <label class="layui-form-label"></label>
-        <div class="layui-inline">
-            <div class="layui-input-inline">
-                <input type="checkbox" name="" title="保存连接" class="layui-bg-green" lay-skin="primary">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">用户名：</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="title" placeholder="请输入用户名" autocomplete="off" class="layui-input" lay-verify="required" required>
+                </div>
+                <label class="layui-input-required-label">*</label>
             </div>
         </div>
-    </div>
 
-    <div class="layui-form-item">
-        <div style="text-align: center;">
-            <button type="button" class="layui-btn" lay-filter="firstSubmit" lay-submit>提交</button>
-            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码：</label>
+            <div class="layui-inline">
+                <div class="layui-input-inline">
+                    <input type="text" name="title" placeholder="请输入密码" autocomplete="off" class="layui-input" lay-verify="required" required>
+                </div>
+                <label class="layui-input-required-label">*</label>
+            </div>
         </div>
-    </div>
-</form>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <div class="layui-inline">
+                <div class="layui-input-inline">
+                    <input type="checkbox" name="" title="保存连接" class="layui-bg-green" lay-skin="primary">
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div style="text-align: center;">
+                <button type="button" class="layui-btn" lay-filter="firstSubmit" lay-submit>提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+</div>
 <script type="text/javascript">
     layui.use('form', function () {
         //只有执行了这一步，部分表单元素才会自动修饰成功
